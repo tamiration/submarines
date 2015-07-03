@@ -1,5 +1,5 @@
 
-        
+# TODO: According to python recommended tools you should inherite from 'object'
 class Board :
 
     # This function gets size of  a requested board game as a tuple
@@ -25,6 +25,7 @@ class Board :
             print "\n"
         print self.board[3][4]
         return self.board
+
     def disply_board(self):
         display=''
         for i in xrange(self.size[0]):
@@ -32,8 +33,6 @@ class Board :
                 display += self.board[i][j]
             display += "\n"
         print display
-
-
 
     # This function gets the Points of the start and the end of the submarine
     # and takes an action to attack or place it.
@@ -97,7 +96,7 @@ class Point ():
         self.y =y
 
         
-
+# TODO: This is a little bit wrong. maybe a function?
 class main:
     b1 = Board()
     b1.create_Board((5, 5))
@@ -106,4 +105,5 @@ class main:
     print (type (1))
 
 if __name__ == '__main__':
-        main()
+    # TODO: You've just created instance of class main....?
+    main()
