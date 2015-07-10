@@ -12,14 +12,18 @@ class Board  (object):
                 self.board[i].append("???")
         return self.board
 
+
     # not relevant i need to recevie the coordinate from the submarines
-    def display_board(self):
+
+    def disply_board(self):
+
         display=''
         for i in xrange(self.size[0]):
             for j in xrange(self.size[1]):
                 display += self.board[i][j]
             display += "\n"
         print display
+
 
 class Submarine (object):
     def __init__(self):
@@ -78,10 +82,11 @@ class Game (object):
 
         
 
+
 def main(self):
     game = Game()
 
 
 
+
 if __name__ == '__main__':
-        main()
